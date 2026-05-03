@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio minimalis Juniar Ibrahim berisi proyek embedded, IoT, dan web dengan case study yang bisa digeser."
+    />
+    <title>Juniar Ibrahim | Portfolio Engineer & Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="core-canvas" aria-hidden="true"></canvas>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Juniar Ibrahim home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span data-brand-name></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#home" data-nav-link="home"></a>
+        <a href="#projects" data-nav-link="projects"></a>
+        <a href="#skills" data-nav-link="skills"></a>
+        <a href="#contact" data-nav-link="contact"></a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="language-switch" role="group" aria-label="Language switcher">
+          <button class="language-button" type="button" data-language-button="id">ID</button>
+          <button class="language-button" type="button" data-language-button="en">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-noise" aria-hidden="true"></div>
+
+        <div class="section-inner hero-layout">
+          <div class="hero-orbit-spacer" aria-hidden="true"></div>
+
+          <div class="hero-copy-wrap">
+            <h1 id="hero-title">
+              <span data-profile-role></span>
+              <strong data-profile-tagline></strong>
+            </h1>
+
+            <div class="hero-about-stack">
+              <p class="eyebrow" data-hero-panel-eyebrow></p>
+              <p class="hero-panel-meta" data-profile-meta></p>
+              <p class="hero-panel-copy" data-hero-panel-copy></p>
+            </div>
+          </div>
+
+          <aside class="hero-panel" aria-label="Foto profil Juniar Ibrahim">
+            <div class="hero-portrait-stage">
+              <div class="hero-panel-photo-wrap">
+                <img class="hero-panel-photo" data-profile-photo alt="" />
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow" data-section-projects-eyebrow></p>
+            <h2 id="projects-title" data-section-projects-title></h2>
+            <p data-section-projects-copy></p>
+          </div>
+
+          <div class="filter-row" aria-label="Project filters" data-project-filters></div>
+          <p class="scroll-hint" data-project-scroll-hint></p>
+
+          <div class="projects-rail-shell">
+            <div class="project-rail" data-projects></div>
+          </div>
+        </div>
+      </section>
+
+      <dialog class="project-dialog" data-project-dialog aria-labelledby="project-dialog-title">
+        <article class="project-dialog-shell">
+          <section class="project-dialog-gallery" aria-labelledby="project-gallery-title">
+            <div class="project-dialog-gallery-head">
+              <div>
+                <p class="eyebrow" data-project-dialog-gallery-label></p>
+                <p class="gallery-count" id="project-gallery-title" data-project-gallery-count></p>
+              </div>
+              <button class="gallery-expand" type="button" data-gallery-expand aria-label="Expand image">
+                <span aria-hidden="true">+</span>
+              </button>
+            </div>
+
+            <div class="gallery-controls">
+              <button class="gallery-button gallery-button-prev" type="button" data-gallery-prev>
+                <span aria-hidden="true">&lt;</span>
+              </button>
+              <button class="gallery-button gallery-button-next" type="button" data-gallery-next>
+                <span aria-hidden="true">&gt;</span>
+              </button>
+            </div>
+
+            <div class="project-gallery-track" data-project-gallery-track></div>
+            <div class="project-gallery-thumbs" data-project-gallery-thumbs></div>
+          </section>
+
+          <section class="project-dialog-panel">
+            <div class="project-dialog-header">
+              <div>
+                <p class="eyebrow" data-project-dialog-label></p>
+                <h2 id="project-dialog-title" data-project-dialog-title></h2>
+                <p class="project-dialog-summary" data-project-dialog-summary></p>
+              </div>
+
+              <button
+                class="icon-button icon-close"
+                type="button"
+                data-project-dialog-close
+                aria-label="Close project case study"
+              >
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+
+            <div class="project-dialog-facts" data-project-dialog-facts></div>
+            <div class="tag-list project-dialog-stack" data-project-dialog-stack></div>
+
+            <div class="project-dialog-grid">
+              <section class="project-dialog-block" data-project-dialog-section="problem">
+                <h3 data-project-dialog-heading="problem"></h3>
+                <p data-project-dialog-problem></p>
+              </section>
+
+              <section class="project-dialog-block" data-project-dialog-section="solution">
+                <h3 data-project-dialog-heading="solution"></h3>
+                <p data-project-dialog-solution></p>
+              </section>
+            </div>
+
+            <div class="project-dialog-grid project-dialog-grid-lists">
+              <section class="project-dialog-block" data-project-dialog-section="built">
+                <h3 data-project-dialog-heading="built"></h3>
+                <ul class="project-dialog-list" data-project-dialog-built></ul>
+              </section>
+
+              <section class="project-dialog-block" data-project-dialog-section="result">
+                <h3 data-project-dialog-heading="result"></h3>
+                <ul class="project-dialog-list" data-project-dialog-result></ul>
+              </section>
+            </div>
+
+            <div class="project-dialog-links" data-project-dialog-links></div>
+          </section>
+        </article>
+      </dialog>
+
+      <section class="section" id="skills" aria-labelledby="skills-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow" data-section-skills-eyebrow></p>
+            <h2 id="skills-title" data-section-skills-title></h2>
+          </div>
+          <div class="skill-grid skill-grid-legacy" data-skills-legacy></div>
+          <div class="skill-grid" data-skills></div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="section-inner contact-layout">
+          <div>
+            <p class="eyebrow" data-section-contact-eyebrow></p>
+            <h2 id="contact-title" data-section-contact-title></h2>
+            <p data-contact-copy></p>
+          </div>
+          <div class="contact-actions" data-contact-actions></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span class="footer-motto" data-footer-motto></span>
+      <span data-footer-name></span>
+      <span class="footer-note" data-footer-note></span>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+    <script src="src/content.js" type="module"></script>
+    <script src="src/main.js" type="module"></script>
+  </body>
+</html>
