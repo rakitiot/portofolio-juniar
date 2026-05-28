@@ -267,7 +267,7 @@ window.portfolioContent = {
     "linkedin": "https://www.linkedin.com/in/juniar-ibrahim/",
     "instagram": "https://www.instagram.com/juniarr11/",
     "photo": "assets/images/profile/juniar-profile-transparent.png",
-    "logo": "assets/images/profile/rakit-iot-logo.png",
+    "logo": "assets/images/profile/rakit-iot-icon.png",
     "meta": {
       "id": "Mahasiswa Pendidikan Teknik Elektro • Universitas Negeri Semarang",
       "en": "Electrical Engineering Education Student • Universitas Negeri Semarang"
